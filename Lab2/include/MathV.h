@@ -42,7 +42,7 @@ public:
   /**
    * konstruktor przenoszacy
   */
-  MathV(MathV&&);
+  MathV(MathV&& v): _size(std::exchange(v._size,0)), _arr(std::exchange(v._arr,nullptr)){}
 
   /**
     * funkcja zwracajaca element wektora o indeksie x

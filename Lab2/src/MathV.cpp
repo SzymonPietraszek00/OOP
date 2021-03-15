@@ -20,15 +20,7 @@ MathV::MathV(const MathV& v): _size(v._size),_arr(new int[v._size]){
   
 }
 
-MathV::MathV(MathV&& v): _size(std::move(v._size)), _arr(new int[v._size]){
 
-  for(unsigned int i = 0; i < _size; i++){
-     _arr[i] = v._arr[i];
-   }
-
-   v._size = 0;
-  
-}
 
 
 void MathV::print(std::string name)const{
