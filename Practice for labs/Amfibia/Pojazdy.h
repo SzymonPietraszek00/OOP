@@ -1,0 +1,9 @@
+#pragma once
+#include <iostream>
+#include "Pojazd.h"
+#include "PojazdLadowy.h"
+#include "Amfibia.h"
+#include "Motorowka.h"
+#include "PredkoscMaksymalna.h"
+#include "Rower.h"
+#include "Samochod.h"
