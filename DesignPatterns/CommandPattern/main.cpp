@@ -94,10 +94,6 @@ class Invoker{
 
 public:
 
-  // ~Invoker(){
-  //   delete _command;
-  // }
-
   void setCommand(Command *command){
 
     _command = command;
@@ -123,7 +119,7 @@ int main() {
   MyBank *myBank = new MyBank;
   Invoker *invoker = new Invoker;
 
-  HelloCommand *helloCommand{};
+  HelloCommand *helloCommand = new HelloCommand();
   DepositeCommand *depositeCommand = new DepositeCommand(myBank, 3500);
   WithdrawCommand *withdrawCommand = new WithdrawCommand(myBank, 1500);
 
